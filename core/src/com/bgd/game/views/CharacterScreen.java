@@ -29,17 +29,17 @@ public class CharacterScreen implements Screen {
 
         Table table = new Table();
         table.setFillParent(true);
-        table.setDebug(true);
+        //table.setDebug(true);
         stage.addActor(table);
 
         titleLabel = new Label("Select your character", skin);
-        titleLabel.setFontScale(1.2f); // Adjust the font size if needed
+        titleLabel.setFontScale(1.2f);
 
         TextButton tom = new TextButton("Tom", skin);
         TextButton jerry = new TextButton("Jerry", skin);
         TextButton backButton = new TextButton("Back", skin, "small");
 
-        table.add(titleLabel).padTop(10).row(); // Add padding at the top
+        table.add(titleLabel).padTop(10).row();
         table.add(tom).fillX().uniformX();
         table.row().pad(10, 0, 10, 0);
         table.add(jerry).fillX().uniformX();
@@ -72,7 +72,7 @@ public class CharacterScreen implements Screen {
 
 
 
-        //stage.getViewport().update(Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), true);
+
     }
 
     @Override
@@ -92,22 +92,22 @@ public class CharacterScreen implements Screen {
 
     @Override
     public void pause() {
-        // Handle pause state if needed
+
     }
 
     @Override
     public void resume() {
-        // Handle resume state if needed
+
     }
 
     @Override
     public void hide() {
-        // Clean up resources when the screen is hidden
+
     }
 
     @Override
     public void dispose() {
-        // dispose of assets when not needed anymore
+
         stage.dispose();
     }
 }

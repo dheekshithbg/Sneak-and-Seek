@@ -34,13 +34,11 @@ public class MenuScreen implements Screen {
         logoTexture = new Texture(Gdx.files.internal("logo.png"));
         logoImage = new Image(logoTexture);
 
-        // Set input processor
         Gdx.input.setInputProcessor(stage);
 
-        // Create UI elements
         Table table = new Table();
         table.setFillParent(true);
-        table.setDebug(true);
+        //table.setDebug(true);
         stage.addActor(table);
 
         TextButton newGame = new TextButton("New Game", skin);
@@ -98,7 +96,7 @@ public class MenuScreen implements Screen {
 
     @Override
     public void hide() {
-        // Optionally handle any cleanup if needed
+
     }
 
     @Override

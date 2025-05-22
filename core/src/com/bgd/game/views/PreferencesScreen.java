@@ -20,7 +20,7 @@ public class PreferencesScreen implements Screen {
 	private MyGame parent;
 	private Stage stage;
 	private Skin skin;
-	private AppPreferences appPreferences; // Add this line
+	private AppPreferences appPreferences;
 
 	// UI Elements
 	private Label titleLabel;
@@ -36,7 +36,7 @@ public class PreferencesScreen implements Screen {
 
 	public PreferencesScreen(MyGame myGame) {
 		parent = myGame;
-		appPreferences = new AppPreferences(); // Initialize AppPreferences
+		appPreferences = new AppPreferences();
 	}
 
 	@Override

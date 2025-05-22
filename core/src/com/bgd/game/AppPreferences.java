@@ -26,7 +26,7 @@ public class AppPreferences {
 
     public void setSoundEffectsEnabled(boolean soundEffectsEnabled) {
         getPrefs().putBoolean(PREF_SOUND_ENABLED, soundEffectsEnabled);
-        getPrefs().flush(); // Consider removing this if performance becomes an issue
+        getPrefs().flush();
     }
 
     public boolean isMusicEnabled() {
@@ -35,7 +35,7 @@ public class AppPreferences {
 
     public void setMusicEnabled(boolean musicEnabled) {
         getPrefs().putBoolean(PREF_MUSIC_ENABLED, musicEnabled);
-        getPrefs().flush(); // Consider removing this if performance becomes an issue
+        getPrefs().flush();
     }
 
     public float getMusicVolume() {
@@ -44,7 +44,7 @@ public class AppPreferences {
 
     public void setMusicVolume(float volume) {
         getPrefs().putFloat(PREF_MUSIC_VOLUME, volume);
-        getPrefs().flush(); // Consider removing this if performance becomes an issue
+        getPrefs().flush();
     }
 
     public float getSoundVolume() {
@@ -53,6 +53,6 @@ public class AppPreferences {
 
     public void setSoundVolume(float volume) {
         getPrefs().putFloat(PREF_SOUND_VOL, volume);
-        getPrefs().flush(); // Consider removing this if performance becomes an issue
+        getPrefs().flush();
     }
 }
